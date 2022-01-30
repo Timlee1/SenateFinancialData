@@ -11,6 +11,7 @@ import pandas as pd
 
 
 def scraper():
+    # Scape data from senate financial disclosures
     driver = main_to_search()
     wait = 3
     time.sleep(wait)
