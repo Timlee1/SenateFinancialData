@@ -80,16 +80,6 @@ def website_to_data(html):
         for td in all_td:
             td = str(td)
             row.append(td)
-            """
-            if td.find('a') != None:
-                rpt = str(td)
-                row.append(rpt)
-            else:
-                td = str(td)
-                start = td.find(">")
-                end = td.find("<", start)
-                sub = td[start+1:end]
-                row.append(sub) """
         res.append(row)
     return res
 
