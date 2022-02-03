@@ -8,6 +8,12 @@ def strip_td(s):
     return s[start+1:end]
 
 
+def strip_ahref(s):
+    start = s.find("=")
+    end = s.find("<", start)
+    return s[start+1:end]
+
+
 def data_clean(csv):
     df = pd.read_csv(csv)
 
@@ -27,10 +33,11 @@ def data_clean(csv):
 
     for ind in df.index:
         s = df['Report'][ind]
-        start = s.find("=")
-        end = s.find(">", start)
-        sub = s[start+1:end]
+        start = s.find("search") - 1
+        end = s.find("target", start) - 2
+        sub = s[start:end]
         df['Report'][ind] = sub
+
         end_type = s.find("<", end)
         sub_type = s[end+1:end_type]
         df['Report Type'][ind] = sub_type
