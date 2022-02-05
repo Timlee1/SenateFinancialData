@@ -65,4 +65,4 @@ def data_clean(csv):
               index=False, header=True)
 
 
-data_clean('raw_data.csv')
+# data_clean('raw_data.csv')

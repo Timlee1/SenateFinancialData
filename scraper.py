@@ -10,6 +10,14 @@ import pandas as pd
 import time
 
 
+def flatten_twod_list(lst):
+    flatten_lst = []
+    for rows in lst:
+        for val in rows:
+            flatten_lst.append(val)
+    return flatten_lst
+
+
 def scraper():
     # Scape data from senate financial disclosures
     driver = main_to_search()
@@ -30,10 +38,7 @@ def scraper():
             driver.find_element(
                 By.CSS_SELECTOR, ".paginate_button.next").click()
             time.sleep(2)
-    flatten_lst = []
-    for nums in lst_of_all_pages:
-        for val in nums:
-            flatten_lst.append(val)
+    flatten_lst = flatten_twod_list(lst_of_all_pages)
     df_to_csv(flatten_lst)
 
 
@@ -91,4 +96,4 @@ def df_to_csv(list):
               index=False, header=True)
 
 
-scraper()
+#scraper()

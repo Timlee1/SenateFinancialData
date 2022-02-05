@@ -9,6 +9,7 @@ import numpy as np
 import pandas as pd
 import time
 import data_cleaning
+import scraper
 
 df = pd.read_csv('search_data.csv')
 HOME = 'https://efdsearch.senate.gov'
@@ -18,18 +19,20 @@ wait = 3
 def all_periodic_transactions():
     driver = user_agreement()
     time.sleep(wait)
-    lst = []
+    lst_all_pages = []
     for ind in df.index:
         if df['Report Type'][ind] == "Periodic Transaction Report":
             url = HOME + df['Report'][ind]
             fname = df['First'][ind]
             lname = df['Last'][ind]
             res = periodic_transactions(driver, url, fname, lname)
-            lst.append(res)
+            lst_all_pages.append(res)
+
+    flatten_lst = scraper.flatten_twod_list(lst_all_pages)
 
 
 def remove_all_whitespace(str):
-    str = str.replace("\n", " ")
+    str = str.replace("\n", "")
     return str.replace(" ", "")
 
 
@@ -61,23 +64,31 @@ def periodic_transactions(driver, url, fname, lname):
             td = all_td[i]
             td = str(td)
             if i == 3:
-                td = remove_all_whitespace(td)
-                start = td.find("https")
-                end = td.find("target")-1
-                td = td[start:end]
-            elif i == 4:
-                td = td.replace("\n", "")
-                td = data_cleaning.strip_td(td).strip()
+                if td.find('a') != -1:
+                    td = remove_all_whitespace(td)
+                    start = td.find("https")
+                    end = td.find("target")-1
+                    td = td[start:end]
+                    ticker_start = td.find("=") + 1
+                    ticker = td[ticker_start:]
+                    row.append(ticker)
+                else:
+                    row.append("--")
+            # elif i == 4:
+            #    td = td.replace("\n", "")
+            #    td = data_cleaning.strip_td(td).strip()
+
             else:
                 td = remove_all_whitespace(td)
-                td = data_cleaning.strip_td(td)
+                td = data_cleaning.strip_td(td).strip()
             row.append(td)
         res.append(row)
+    df_csv(res)
     return res
 
 
 def df_csv(res):
-    df = pd.DataFrame(res)
+    df = pd.DataFrame(res,)
     df.to_csv(r'C:/Users/15165/Documents/Projects/SenateFinancialData/test.csv',
               index=False, header=True)
 
