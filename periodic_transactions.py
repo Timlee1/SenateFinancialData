@@ -77,9 +77,21 @@ def periodic_transactions(driver, url, fname, lname):
             # elif i == 4:
             #    td = td.replace("\n", "")
             #    td = data_cleaning.strip_td(td).strip()
+            elif i == 4:
+                td = td.replace("\n", "")
+                td = data_cleaning.strip_td(td).strip()
+                end = td.find("- Common Stock")
+                if end != -1:
+                    td = td[:end]
+                end = td.find("Common")
+                if end != -1:
+                    td = td[:end]
+                end = td.find("- Class")
+                if end != -1:
+                    td = td[:end]
 
             else:
-                td = remove_all_whitespace(td)
+                td = td.replace("\n", "")  # remove_all_whitespace(td)
                 td = data_cleaning.strip_td(td).strip()
             row.append(td)
         res.append(row)
