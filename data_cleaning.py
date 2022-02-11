@@ -44,6 +44,8 @@ def data_clean(csv):
         indf = sub_type.find('for')
         end = indf-1
         df['Report Type'][ind] = sub_type[0:end]
+        extra = df['Report Type'][ind].find(">")
+        df['Report Type'][ind] = df['Report Type'][ind][extra+1:]
         if sub_type[end+5:].find('CY') != -1:
             df['Report Year'][ind] = sub_type[end+7:]
         else:
@@ -65,4 +67,4 @@ def data_clean(csv):
               index=False, header=True)
 
 
-# data_clean('raw_data.csv')
+data_clean('raw_data.csv')

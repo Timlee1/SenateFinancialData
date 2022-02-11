@@ -1,0 +1,104 @@
+First,Last,Date,Ticker,Asset Name,Asset Type,Type,Amount,Ticker Link
+MICHAEL,BENNET,03/28/2017,RGC,Regal Entertainment Group,Stock,Sale (Partial),"$500,001 - $1,000,000",https://finance.yahoo.com/q?s=RGC
+MICHAEL,BENNET,12/08/2017,RGC,Regal Entertainment Group,Stock,Sale (Full),"$500,001 - $1,000,000",https://finance.yahoo.com/q?s=RGC
+MICHAEL,BENNET,11/01/2017,LVLT,"Level 3 Communications, Inc. (Exchanged)
+                                            <br/>
+                                            CenturyLink, Inc. (Received)",Stock,Exchange,"$50,001 - $100,000",https://finance.yahoo.com/q?s=LVLT
+ROY,BLUNT,11/26/2019,KHC,"The Kraft Heinz Company
+                                        
+                                        
+                                        
+                                            <div class=""text-muted"">Option Type: Neither <br/><em>Strike price:</em> $24.96
+                                                <br/>
+<em>Expires:</em> 02/23/2020
+                                            </div>",Stock Option,Sale (Full),"$1,001 - $15,000",https://finance.yahoo.com/q?s=KHC
+ROY,BLUNT,12/02/2019,MDLZ,"Mondelez International, Inc.
+                                        
+                                        
+                                        
+                                            <div class=""text-muted"">Option Type: Neither <br/><em>Strike price:</em> $24.87
+                                                <br/>
+<em>Expires:</em> 02/23/2022
+                                            </div>",Stock Option,Sale (Full),"$50,001 - $100,000",https://finance.yahoo.com/q?s=MDLZ
+ROY,BLUNT,09/27/2021,NRDY,Nerdy Inc. Class A Common Stock,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=NRDY
+ROY,BLUNT,11/11/2014,MDLZ,"Mondelez International, Inc. (NASDAQ)",,Sale (Full),"$50,001 - $100,000",https://finance.yahoo.com/q?s=MDLZ
+CORY,BOOKER,08/08/2014,NKE,"Nike, Inc. (NYSE)",,Sale (Full),"$1,001 - $15,000",https://finance.yahoo.com/q?s=NKE
+CORY,BOOKER,08/08/2014,IRM,Iron Mountain Inc. (NYSE),,Sale (Full),"$1,001 - $15,000",https://finance.yahoo.com/q?s=IRM
+CORY,BOOKER,08/08/2014,IBM,International Business Machines Corporation (NYSE),,Sale (Full),"$1,001 - $15,000",https://finance.yahoo.com/q?s=IBM
+CORY,BOOKER,08/08/2014,FB,"Facebook, Inc. (NASDAQ)",,Sale (Full),"$1,001 - $15,000",https://finance.yahoo.com/q?s=FB
+CORY,BOOKER,08/08/2014,AMZN,Amazon.com Inc. (NASDAQ),,Sale (Full),"$1,001 - $15,000",https://finance.yahoo.com/q?s=AMZN
+CORY,BOOKER,08/08/2014,AAPL,Apple Inc. (NASDAQ),,Sale (Full),"$1,001 - $15,000",https://finance.yahoo.com/q?s=AAPL
+CORY,BOOKER,08/08/2014,DISH,Dish Network Corp. (NASDAQ),,Sale (Full),"$1,001 - $15,000",https://finance.yahoo.com/q?s=DISH
+CORY,BOOKER,08/08/2014,AMT,American Tower Corporation (NYSE),,Sale (Full),"$50,001 - $100,000",https://finance.yahoo.com/q?s=AMT
+CORY,BOOKER,08/08/2014,EBAY,eBay Inc. (NASDAQ),,Sale (Full),"$1,001 - $15,000",https://finance.yahoo.com/q?s=EBAY
+CORY,BOOKER,08/08/2014,IRM,Iron Mountain Inc. (NYSE),,Sale (Full),"$1,001 - $15,000",https://finance.yahoo.com/q?s=IRM
+CORY,BOOKER,08/08/2014,NFLX,"Netflix, Inc. (NASDAQ)",,Sale (Full),"$15,001 - $50,000",https://finance.yahoo.com/q?s=NFLX
+CORY,BOOKER,04/08/2014,AMT,American Tower Corporation (NYSE),,Sale (Full),"$15,001 - $50,000",https://finance.yahoo.com/q?s=AMT
+CORY,BOOKER,04/08/2014,NFLX,"Netflix, Inc. (NASDAQ)",,Sale (Full),"$15,001 - $50,000",https://finance.yahoo.com/q?s=NFLX
+MARIA,CANTWELL,04/28/2016,RNWK,RealNetworks Inc.,Stock,Sale (Partial),"$1,001 - $15,000",https://finance.yahoo.com/q?s=RNWK
+MARIA,CANTWELL,06/06/2014,RNWK,RealNetworks Inc. (NASDAQ),,Sale (Partial),"$1,001 - $15,000",https://finance.yahoo.com/q?s=RNWK
+MARIA,CANTWELL,06/06/2014,RNWK,RealNetworks Inc. (NASDAQ),,Sale (Partial),"$1,001 - $15,000",https://finance.yahoo.com/q?s=RNWK
+MARIA,CANTWELL,06/06/2014,RNWK,RealNetworks Inc. (NASDAQ),,Sale (Partial),"$1,001 - $15,000",https://finance.yahoo.com/q?s=RNWK
+MARIA,CANTWELL,06/06/2014,RNWK,RealNetworks Inc. (NASDAQ),,Sale (Partial),"$1,001 - $15,000",https://finance.yahoo.com/q?s=RNWK
+SHELLEY,CAPITO,11/14/2016,JWN,"Nordstrom, Inc.",Stock,Sale (Full),"$1,001 - $15,000",https://finance.yahoo.com/q?s=JWN
+SHELLEY,CAPITO,03/03/2020,JPM,JPMorgan Chase &amp; Co.,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=JPM
+SHELLEY,CAPITO,03/03/2020,MSFT,Microsoft Corporation,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=MSFT
+SHELLEY,CAPITO,03/03/2020,JNJ,Johnson &amp; Johnson,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=JNJ
+SHELLEY,CAPITO,03/03/2020,ABT,Abbott Laboratories,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=ABT
+SHELLEY,CAPITO,06/24/2021,USB,U.S. Bancorp,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=USB
+SHELLEY,CAPITO,06/23/2021,JPM,JPMorgan Chase &amp; Co.,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=JPM
+SHELLEY,CAPITO,06/23/2021,AAPL,Apple Inc.,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=AAPL
+SHELLEY,CAPITO,02/01/2019,ANCX,"Access National Corporation (Exchanged)
+                                            <br/>
+                                            Union Bankshares Corporation (Received)",Stock,Exchange,"$1,001 - $15,000",https://finance.yahoo.com/q?s=ANCX
+SHELLEY,CAPITO,09/05/2017,TD,The Toronto-Dominion Bank,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=TD
+SHELLEY,CAPITO,09/05/2017,SIEGY,Siemens Aktiengesellschaft,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=SIEGY
+SHELLEY,CAPITO,09/05/2017,PM,Philip Morris International Inc.,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=PM
+SHELLEY,CAPITO,09/05/2017,PFE,Pfizer Inc.,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=PFE
+SHELLEY,CAPITO,09/05/2017,NVS,Novartis AG,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=NVS
+SHELLEY,CAPITO,09/05/2017,NEE,"NextEra Energy, Inc.",Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=NEE
+SHELLEY,CAPITO,09/05/2017,NSRGY,Nestlé S.A.,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=NSRGY
+SHELLEY,CAPITO,09/05/2017,MSFT,Microsoft Corporation,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=MSFT
+SHELLEY,CAPITO,09/05/2017,MRK,"Merck &amp; Co., Inc.",Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=MRK
+SHELLEY,CAPITO,09/05/2017,LMT,Lockheed Martin Corporation,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=LMT
+SHELLEY,CAPITO,09/05/2017,LVMUY,LVMH Moët Hennessy Louis Vuitton S.E.,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=LVMUY
+SHELLEY,CAPITO,09/05/2017,INTC,Intel Corporation,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=INTC
+SHELLEY,CAPITO,09/05/2017,RHHBY,Roche Holding AG,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=RHHBY
+SHELLEY,CAPITO,09/05/2017,XOM,Exxon Mobil Corporation,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=XOM
+SHELLEY,CAPITO,09/05/2017,CMPGY,Compass Group PLC,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=CMPGY
+SHELLEY,CAPITO,09/05/2017,CSCO,"Cisco Systems, Inc.",Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=CSCO
+SHELLEY,CAPITO,09/05/2017,BASFY,BASF SE,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=BASFY
+SHELLEY,CAPITO,09/05/2017,AXAHY,AXA SA,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=AXAHY
+SHELLEY,CAPITO,09/05/2017,T,AT&amp;T Inc.,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=T
+SHELLEY,CAPITO,04/07/2020,RTN,"United Technologies Corp. (Exchanged)
+                                            <br/>
+                                            Raytheon Company (Received)",Stock,Exchange,"$15,001 - $50,000",https://finance.yahoo.com/q?s=RTN
+SHELLEY,CAPITO,09/25/2018,GILD,"Gilead Sciences, Inc.",Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=GILD
+SHELLEY,CAPITO,09/27/2018,QCOM,QUALCOMM Incorporated,Stock,Sale (Partial),"$1,001 - $15,000",https://finance.yahoo.com/q?s=QCOM
+SHELLEY,CAPITO,09/27/2018,WAB,Westinghouse Air Brake Technologies Corporation,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=WAB
+SHELLEY,CAPITO,03/28/2018,FANUY,Fanuc Corporation,Stock,Sale (Full),"$1,001 - $15,000",https://finance.yahoo.com/q?s=FANUY
+SHELLEY,CAPITO,03/28/2018,WFC,Wells Fargo &amp; Company,Stock,Sale (Partial),"$15,001 - $50,000",https://finance.yahoo.com/q?s=WFC
+SHELLEY,CAPITO,12/12/2018,GIS,"General Mills, Inc.",Stock,Sale (Full),"$1,001 - $15,000",https://finance.yahoo.com/q?s=GIS
+SHELLEY,CAPITO,12/13/2018,PG,The Procter &amp; Gamble Company,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=PG
+SHELLEY,CAPITO,12/13/2018,PEP,"PepsiCo, Inc.",Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=PEP
+SHELLEY,CAPITO,04/09/2019,C,Citigroup Inc.,Stock,Sale (Partial),"$1,001 - $15,000",https://finance.yahoo.com/q?s=C
+SHELLEY,CAPITO,04/09/2019,WFC,Wells Fargo &amp; Company,Stock,Sale (Full),"$15,001 - $50,000",https://finance.yahoo.com/q?s=WFC
+SHELLEY,CAPITO,04/01/2019,WFC,Wells Fargo &amp; Company,Stock,Sale (Partial),"$15,001 - $50,000",https://finance.yahoo.com/q?s=WFC
+SHELLEY,CAPITO,12/16/2019,CMCSA,Comcast Corporation,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=CMCSA
+SHELLEY,CAPITO,12/11/2019,C,Citigroup Inc.,Stock,Sale (Partial),"$1,001 - $15,000",https://finance.yahoo.com/q?s=C
+SHELLEY,CAPITO,04/24/2017,WFC,Wells Fargo &amp; Company,Stock,Sale (Partial),"$1,001 - $15,000",https://finance.yahoo.com/q?s=WFC
+SHELLEY,CAPITO,10/31/2018,PX,"Praxair, Inc. (Exchanged)
+                                            <br/>
+                                            Linde plc (Received)",Stock,Exchange,"$1,001 - $15,000",https://finance.yahoo.com/q?s=PX
+SHELLEY,CAPITO,10/17/2018,JNJ,Johnson &amp; Johnson,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=JNJ
+SHELLEY,CAPITO,10/16/2018,JPM,JPMorgan Chase &amp; Co.,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=JPM
+SHELLEY,CAPITO,04/20/2017,PTEN,"Seventy Seven Energy, Inc (Exchanged)
+                                            <br/>
+                                            Patterson-UTI Energy, Inc. (Received)",Stock,Exchange,"$1,001 - $15,000",https://finance.yahoo.com/q?s=PTEN
+SHELLEY,CAPITO,12/09/2019,TFC,"BBT  (Exchanged)
+                                            <br/>
+                                            Truist Financial Corporation (Received)",Stock,Exchange,"$100,001 - $250,000",https://finance.yahoo.com/q?s=TFC
+SHELLEY,CAPITO,03/22/2016,AAPL,Apple Inc.,Stock,Purchase,"$1,001 - $15,000",https://finance.yahoo.com/q?s=AAPL
+SHELLEY,CAPITO,10/31/2018,LIN,"Linde plc (Exchanged)
+                                            <br/>
+                                            Praxair, Inc. (Received)",Stock,Exchange,"$1,001 - $15,000",https://finance.yahoo.com/q?s=LIN

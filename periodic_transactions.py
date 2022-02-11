@@ -12,16 +12,21 @@ import data_cleaning
 import scraper
 
 df = pd.read_csv('search_data.csv')
+
 HOME = 'https://efdsearch.senate.gov'
-wait = 3
+wait = 2
 
 
 def all_periodic_transactions():
     driver = user_agreement()
     time.sleep(wait)
     lst_all_pages = []
-    for ind in df.index:
-        if df['Report Type'][ind] == "Periodic Transaction Report":
+    # for ind in df.index:
+    for ind in range(100):
+        time.sleep(wait)
+        s = df['Report Type'][ind]
+        # if df['Report Type'][ind] == "Periodic Transaction Report":
+        if s.find("Periodic Transaction Report") != -1:
             url = HOME + df['Report'][ind]
             fname = df['First'][ind]
             lname = df['Last'][ind]
@@ -29,6 +34,7 @@ def all_periodic_transactions():
             lst_all_pages.append(res)
 
     flatten_lst = scraper.flatten_twod_list(lst_all_pages)
+    df_to_csv(flatten_lst)
 
 
 def remove_all_whitespace(str):
@@ -63,47 +69,48 @@ def periodic_transactions(driver, url, fname, lname):
         for i in range(len(all_td)):
             td = all_td[i]
             td = str(td)
-            if i == 3:
-                if td.find('a') != -1:
-                    td = remove_all_whitespace(td)
-                    start = td.find("https")
-                    end = td.find("target")-1
-                    td = td[start:end]
-                    ticker_start = td.find("=") + 1
-                    ticker = td[ticker_start:]
-                    row.append(ticker)
-                else:
-                    row.append("--")
-            # elif i == 4:
-            #    td = td.replace("\n", "")
-            #    td = data_cleaning.strip_td(td).strip()
-            elif i == 4:
-                td = td.replace("\n", "")
-                td = data_cleaning.strip_td(td).strip()
-                end = td.find("- Common Stock")
-                if end != -1:
-                    td = td[:end]
-                end = td.find("Common")
-                if end != -1:
-                    td = td[:end]
-                end = td.find("- Class")
-                if end != -1:
-                    td = td[:end]
-
-            else:
-                td = td.replace("\n", "")  # remove_all_whitespace(td)
-                td = data_cleaning.strip_td(td).strip()
             row.append(td)
         res.append(row)
-    df_csv(res)
     return res
 
 
-def df_csv(res):
-    df = pd.DataFrame(res,)
+def df_to_csv(res):
+    df = pd.DataFrame(res)
     df.to_csv(r'C:/Users/15165/Documents/Projects/SenateFinancialData/test.csv',
               index=False, header=True)
 
 
-periodic_transactions(user_agreement(
-), 'https://efdsearch.senate.gov/search/view/ptr/a8e388bc-72c5-4227-b6f3-64b7bb779883/', "Doggy", "Cutie")
+def df_clean_to_csv(res):
+    df = pd.DataFrame(res, columns=["First", "Last", "#", "Date", "Owner",
+                                    "Ticker", "Asset Name", "Asset Type", "Type", "Amount", "Comment"])
+    df.to_csv(r'C:/Users/15165/Documents/Projects/SenateFinancialData/test.csv',
+              index=False, header=True)
+
+
+def data_clean_search(csv):
+    df = pd.read_csv(csv)
+    df.drop(['#', 'Owner', 'Comment'], axis=1, inplace=True)
+    df['Ticker Link'] = df['Ticker']
+    for ind in df.index:
+        df['Date'][ind] = scraper.strip_td(df['Date'][ind]).strip()
+        df['Ticker'][ind] = scraper.strip_td(df['Ticker'][ind]).strip()
+        df['Asset Name'][ind] = scraper.strip_td(df['Asset Name'][ind]).strip()
+        df['Asset Type'][ind] = scraper.strip_td(df['Asset Type'][ind]).strip()
+        df['Type'][ind] = scraper.strip_td(df['Type'][ind]).strip()
+        df['Amount'][ind] = scraper.strip_td(df['Amount'][ind]).strip()
+
+        ticker_link, ticker = scraper.strip_ahref(df['Ticker'][ind])
+        df['Ticker Link'][ind] = ticker_link
+        df['Ticker'][ind] = ticker
+
+    df = df.loc[df['Ticker'] != "-"]
+    df = df.loc[df['Ticker'] != ""]
+    df.to_csv(r'C:/Users/15165/Documents/Projects/SenateFinancialData/test_clean.csv',
+              index=False, header=True)
+
+# periodic_transactions(user_agreement(
+# ), 'https://efdsearch.senate.gov/search/view/ptr/a8e388bc-72c5-4227-b6f3-64b7bb779883/', "Doggy", "Cutie")
+
+
+# all_periodic_transactions()
+data_clean_search("test.csv")
