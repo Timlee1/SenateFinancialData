@@ -132,6 +132,19 @@ def data_clean_raw(csv):
         df['Report'][ind] = link
         df['Report Type'][ind] = link_type
 
+        rpt = df['Report Type'][ind]
+        if rpt.find("Annual Report") != -1:
+            fr = rpt.find("for")
+            if fr != -1:
+                df['Report Type'][ind] = rpt[:fr-1]
+                df['Date'][ind] = rpt[-4:]
+            else:
+                df['Date'][ind] = str(int(df['Date'][ind][-4:])-1)
+        if rpt.find("Periodic Transaction Report") != -1:
+            fr = rpt.find("for")
+            if fr != -1:
+                df['Report Type'][ind] = rpt[:fr-1]
+
     df.to_csv(r'C:/Users/15165/Documents/Projects/SenateFinancialData/search_data.csv',
               index=False, header=True)
 
